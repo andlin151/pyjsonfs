@@ -1,0 +1,32 @@
+{
+    "es_dir" : true,
+    "permisos": "555",
+    "nombre":"", 
+    "contenidos": [
+        {
+            "es_dir": true,
+            "permisos": "555", 
+            "nombre": "mis_documentos",
+            "contenidos": [
+                {
+                    "es_dir": false,
+                    "nombre": "readme.md",
+                    "permisos": "444",
+                    "contenido": "# Bienvenido\nEste es un archivo Markdown dentro de una carpeta."
+                },
+                                {
+                    "es_dir": false,
+                    "nombre": "foobar.txt",
+                    "permisos": "444",
+                    "contenido": "Lorem ipsum, dolor sit amet..."
+                }
+            ]
+        },
+        {
+            "es_dir": false,
+            "nombre": "hola.txt",
+            "permisos": "444",
+            "contenido": "Hola todo el mundo, el dia comenzo."
+        }
+    ]
+}
