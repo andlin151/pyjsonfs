@@ -35,3 +35,7 @@ Finalmente ejecútelo de esta forma:
 ```bash
 $ ./pyjsonfs.py archivo.json /tmp/foo
 ```
+# Fotocapturas
+
+![Terminal](img/ventana1.png)
+![File Manager](img/ventana2.png)
