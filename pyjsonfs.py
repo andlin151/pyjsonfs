@@ -24,7 +24,7 @@ class PyJSONFS( Operations ):
             return self.mi_json
         
         # si no es la raiz, vamos a recorrer la ruta
-        partes = ruta.strip('/').split('/')
+        partes = ruta.strip( '/' ).split( '/' )
         objeto = self.mi_json
         # con esto iriamos de la raiz a las hojas 
         # objeto: archivo o directorio
@@ -67,8 +67,8 @@ class PyJSONFS( Operations ):
         contenidos del directorio
         """
         objeto = self._obtener_objeto( path )
-        if objeto is None or not objeto.get("es_dir", False):
-            raise FileNotFoundError( errno.ENOENT, os.strerror(errno.ENOENT), path )
+        if objeto is None or not objeto.get( "es_dir", False ):
+            raise FileNotFoundError( errno.ENOENT, os.strerror( errno.ENOENT ), path )
         
         
         # "." y ".." son siempre parte del listado de directorios
@@ -108,4 +108,3 @@ if __name__ == '__main__':
     mount_point = sys.argv[2]
 
     fuse = FUSE( PyJSONFS( json_file ), mount_point, foreground=True, ro=True )
-
