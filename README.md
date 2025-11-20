@@ -37,5 +37,5 @@ $ ./pyjsonfs.py archivo.json /tmp/foo
 ```
 # Fotocapturas
 
-![Terminal](images/ventana1.png)
-![File Manager](images/ventana2.png)
+![Terminal](img/ventana1.png)
+![File Manager](img/ventana2.png)
